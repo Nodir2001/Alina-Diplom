@@ -1,0 +1,54 @@
+
+{% load static %}
+<html>
+    <head>
+        <title>Beauty</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+    </head>
+    <body>
+        <div class="circle"></div>
+        <header>
+            <a href="/" class="logo"> <img src="static/image/logo.svg" alt="" class=""> Beauty </a>
+            <ul>
+                <li>
+                    <a href="#"> Каталог </a>
+                </li>
+
+                <li>
+                    <a href="#">Специалисты</a>
+                </li>
+
+                <li>
+                    <a href="#">О нас</a>
+                </li>
+
+                <li>
+                    <a href="#">Записаться на прием</a>
+                </li>
+            </ul>
+        </header>
+
+        <a> <img src="static/image/hand.png" alt="" class="hand-pictare"></a>
+        
+        {% block content %}
+        
+        <!-- Try to delete invisible column-->
+
+        {% endblock %}
+
+        <footer style=" background-image: url(../../blog/static/image/footer.png); " >
+            <div class="footer--container">
+              <div class="footer--flex">
+                <div class="footerCol footer--first--col">
+                  <p class="footerPhone">+7 (777) 777-77-77</p>
+                  <p class="footerLogo">TopSkills</p>
+                </div>
+              </div>
+            </div>           
+        </footer>
+    </body>
+</html>
