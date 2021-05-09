@@ -56,14 +56,16 @@ header ul li a:hover {
 }
 
 section {
-    position: relative;
+    min-height: 100vh;
+    width: 100%;
+   /* position: relative;
     top: 50%;
     left: 8%;
     transform: translateY(-50%);
     margin-left: 10%;
     display: flex;
     justify-content: left;
-    align-items: center;
+    align-items: center; */
 }
 
 section #text {
@@ -94,7 +96,7 @@ section  p {
     width: 347px;
     height: 88px;
     text-align: justify;
-}
+} 
 
 #btn {
 
@@ -145,4 +147,355 @@ section  p {
 footer {
     margin-top: 145px;
     background-image: url(../../blog/static/image/footer.png); 
+}
+
+
+
+
+/* Section  */
+
+.photo-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 27.6352px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+.photo-grid-columns {
+   /* width: 1170px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto; */  
+    display: grid;
+ /*   grid-gap: 20px 100px; */
+    grid-template-columns: auto auto auto auto;
+    padding: 50px;
+    justify-content: center;
+}
+.photo-grid-rows {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  /*  grid-gap: 30px; */
+    /* background-color: #2196F3; */
+    padding: 20px;
+    justify-content: center;
+}
+.photo-grid-block{
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.text-decoration {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    color: white;
+    text-decoration-color: red;
+}
+
+div > h2 {
+    text-align: center;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 50px;
+}
+
+
+
+/*  accordion  */
+/*
+.third-part-site {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #bedfe8;
+}
+ */
+.accordion {
+    display: grid;
+    /*
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    max-width: 1000px; */
+    justify-content: center;
+    align-items: center;
+}
+
+.accordion .contentBx {
+
+    position: relative;
+    width: 800px;
+    margin: 10px 20px;
+}
+
+.accordion .contentBx .labul{
+
+    position: relative;
+    padding: 20px;
+    font-weight: 600;
+    /* background: blue; */
+    cursor: pointer;
+    /* border-block: inherit; */
+    border-bottom-style: groove;
+    color: #333;
+
+}
+
+.accordion .contentBx .labul::before {
+
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+}
+
+.accordion .contentBx.active .labul::before {
+
+    content: 'x';
+
+}
+
+.accordion .contentBx .content {
+
+    position: relative;
+    background: #fff;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+   /* overflow-y: auto;*/
+
+}
+
+.accordion  .contentBx.active .content {
+    background: coral;
+    height: 1300px;
+    padding: 10px;
+}
+
+.accordion-content-catalog {
+    display: grid;
+    grid-gap: 0 350px;
+    grid-template-columns: auto auto;
+}
+
+.accordion-content-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 158.2%;
+    /* or 28px */
+
+    letter-spacing: 0.03em;
+
+    color: #383838;
+}
+
+.accordion-content-coast {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 158.2%;
+    /* or 28px */
+
+    letter-spacing: 0.03em;
+
+    color: #FE6E78;
+}
+
+.accordion-content-time {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 158.2%;
+    /* identical to box height, or 24px */
+
+    letter-spacing: 0.03em;
+
+    color: #9A9A9A;
+}
+
+.labul-style {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 158.2%;
+}
+
+
+/*   About Us */
+
+.section-aboutus {
+
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    padding: 10px;
+    max-width: 950px;
+    margin: auto;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 33px;
+    /* or 183% */
+
+    color: #383838;
+}
+
+
+/*  WHyWE */
+
+.section-whywe {
+
+    display: grid;
+    grid-gap: 0 50px;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.section-whywe-picture {
+
+    width: 250px; */
+    /* height: 250px; */
+    justify-content: center;
+    /* padding: 20px; */
+    align-items: center;
+    /* display: flex; */
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.section-whywe-picture > img {
+
+    text-align: center;
+    margin: auto;
+}
+
+.section-whywe-picture > h6 {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 147.02%;
+    text-align: center;
+    padding: 20px;
+    color: #333333;
+}
+
+
+/*  Best WOrk */ 
+
+.section-bestwork-conteiner-text {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    padding: 10px;
+    max-width: 950px;
+    margin: auto;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 33px;
+    color: #383838;
+    text-align: center;
+}
+
+.section-bestwork-conteiner-picture {
+
+    display: grid;
+    grid-gap: 0 50px;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    margin: auto;
+
+}
+
+.conteiner-picture > h6{
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+
+    color: #333333;
+}
+
+
+/*  Our worker  */
+
+.our-worker--container {
+
+    display: grid;
+    grid-gap: 100px 100px;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto ;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.our-worker--container-picture {
+    display: grid;
+}
+
+.our-worker--container-picture > h6{
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 550;
+    font-size: 16px;
+    line-height: 147.02%;
+    text-align: center;
+   /* padding: 10px; */
+    color: #333333;
+}
+
+.our-worker--container-picture > h7 {
+    color: grey;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+
+.our-worker--container-picture > img {
+
+    text-align: center;
+    margin: auto;
+}
+
+
+/*   Form  */
+
+.form-picture {
+    max-width: 780px;
+    height: 550px;
+    float: left;
+    background-image: url(../image/mail.jpg); 
 }
