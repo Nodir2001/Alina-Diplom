@@ -278,7 +278,7 @@ div > h2 {
 }
 
 .accordion  .contentBx.active .content {
-    background: coral;
+    background: rgb(231, 229, 228);
     height: 1300px;
     padding: 10px;
 }
