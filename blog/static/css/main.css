@@ -536,6 +536,7 @@ div > h2 {
 
 .button {
     display: inline-block;
+    position: relative;
     border-radius: 4px;
     background-color: #f4511e;
     border: none;

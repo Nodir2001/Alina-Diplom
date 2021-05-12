@@ -5,17 +5,26 @@
 <html>
     <head>
         <title>Beauti</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-        <!-------style--css-->
+        <!------------------------------------style--css-------------------------------------------->
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="{% static 'css/main.css' %}">
         <link rel="stylesheet" href="{% static 'css/landing.css' %}">
+        <link rel="stylesheet" href="{% static 'css/pop-up.css' %}">
 
-         
+         <!--------------------------------js------------------------------------------------------->
+         <script>
+                    /**  Popup function  */
+                function togglePopup() {
+                    document.getElementById("popup-1").classList.toggle("active");
+
+                }
+        </script>
     </head>
     <body>
         <div class="circle"></div>
@@ -35,12 +44,14 @@
                 </li>
 
                 <li>
-                    <a href="#">Записаться на прием</a>
-                </li>
+                    <a  onclick="location.href='{% url 'order' %}'"> Записаться на прием </a>
+                </li>   
             </ul>
         </header>
 
         <a> <img src="static/image/hand.png" alt="" class="hand-pictare"></a>
+
+          <!--button onclick="togglePopup()">Show Popup</button-->
         
         {% block content %}
         
