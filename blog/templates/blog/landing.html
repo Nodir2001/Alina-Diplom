@@ -1007,6 +1007,7 @@
                 <form class="">
                     <input type="hidden" name="csrfmiddlewaretoken"
                         value="ZVsSMroFmq2xRGt5eZZ9VW7Pf0YcXeARCe6w8gjJoc2MsatLWpYZCSpI6tES5QTy">
+                        
                     <div class="columns">
                         <div class="column">
                             <div class="field">
@@ -1120,17 +1121,15 @@
 
 </section>
 
-<script>
-
+<script src="{% static 'js/accordion.js' %}">
     const accordion = document.getElementsByClassName('contentBx');
 
-    for (i = 0; i < accordion.length; i++) {
-
-        accordion[i].addEventListener('click', function () {
-            this.classList.toggle('active')
-        })
-    }
+        for ( i=0; i<accordion.length; i++ ){
+        
+            accordion[i].addEventListener('click', function(){
+                this.classList.toggle('active')
+            })
+        }
 </script>
-
 
 {% endblock %}
