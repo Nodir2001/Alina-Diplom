@@ -1,38 +1,57 @@
 
 {% load static %}
+
+
 <html>
     <head>
-        <title>Beauty</title>
+        <title>Beauti</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <!------------------------------------style--css-------------------------------------------->
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="{% static 'css/main.css' %}">
+        <link rel="stylesheet" href="{% static 'css/landing.css' %}">
+        <link rel="stylesheet" href="{% static 'css/pop-up.css' %}">
 
+         <!--------------------------------js------------------------------------------------------->
+         <script>
+                    /**  Popup function  */
+                function togglePopup() {
+                    document.getElementById("popup-1").classList.toggle("active");
+
+                }
+        </script>
     </head>
     <body>
         <div class="circle"></div>
         <header>
-            <a href="/" class="logo"> <img src="static/image/logo.svg" alt="" class=""> Beauty </a>
+            <a href="/" class="logo"> <img src="static/image/logo.svg" alt="" class=""> Beauti </a>
             <ul>
                 <li>
-                    <a href="#"> Каталог </a>
+                    <a href="#C1"> Каталог </a>
                 </li>
 
                 <li>
-                    <a href="#">Специалисты</a>
+                    <a href="#C2">Специалисты</a>
                 </li>
 
                 <li>
-                    <a href="#">О нас</a>
+                    <a href="#C3">О нас</a>
                 </li>
 
                 <li>
-                    <a href="#">Записаться на прием</a>
-                </li>
+                    <a  onclick="location.href='{% url 'order' %}'"> Записаться на прием </a>
+                </li>   
             </ul>
         </header>
 
         <a> <img src="static/image/hand.png" alt="" class="hand-pictare"></a>
+
+          <!--button onclick="togglePopup()">Show Popup</button-->
         
         {% block content %}
         
@@ -40,12 +59,24 @@
 
         {% endblock %}
 
-        <footer style=" background-image: url(../../blog/static/image/footer.png); " >
+        <footer>
             <div class="footer--container">
               <div class="footer--flex">
-                <div class="footerCol footer--first--col">
-                  <p class="footerPhone">+7 (777) 777-77-77</p>
-                  <p class="footerLogo">TopSkills</p>
+                <div class="footerCol">
+                  <p href="/" class="logo"> <img src="static/image/logo.svg" alt="" class=""> Beauti </p>
+                    
+                  <div class="footerCol-two">
+                    <p class="footerPhone"> 
+                        <img src="static/image/What'sapp.svg" alt="" class="">
+                        8 (951) 894-10-000
+                    </p>
+
+                    <p class="footerInsta"> 
+                        <img src="static/image/instagram.svg" alt="" class="">
+                        kosmetologia_beauti_kzn
+                    </p>
+
+                   </div> 
                 </div>
               </div>
             </div>           

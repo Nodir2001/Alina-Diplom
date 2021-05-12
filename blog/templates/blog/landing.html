@@ -2,52 +2,1134 @@
 
 {% block content %}
 
-<title>TopSkills</title>
-<a> <img src="static/image/hand.png" alt="" class="hand-pictare" style="position: absolute;width: 300px;
-    height: 300px;
-    margin-left: 900px;
-    margin-top: 50px;"></a>
-    <section class="first-part-site">
-        <h2 id="text"> 1100 ₽ <br>
-            <span> Педикюр с  <br> покрытием лака </span> 
-                <p>Лак японского качества никого не оставит равнодушным, его красочная палитра заинтересует даже истинных перфекционистов, а влагостойкость лака является одним из лучших на рынке</p>
-        </h2>
+{% load static %}
 
-        <button href="#" id="btn">ЗАКАЗАТЬ СЕЙЧАС </button>
-        <div class="flowers">
-            <img src="static/image/flower1" alt="" />
-            <img src="static/image/flower2" alt="" />
-            <img src="static/image/flower1" alt="" />
+<title>TopSkills</title>
+<a> <img src="static/image/hand.png" alt="" class="hand hand-pictare"></a>
+<section class="first-part-site welcome">
+    <h2 id="text"> 1100 ₽ <br>
+        <span> Педикюр с <br> покрытием лака </span>
+        <p>Лак японского качества никого не оставит равнодушным, его красочная палитра заинтересует даже истинных
+            перфекционистов, а влагостойкость лака является одним из лучших на рынке</p>
+    </h2>
+
+    <a href="#C4" id="btn">ЗАКАЗАТЬ СЕЙЧАС </a>
+    <div class="flowers">
+        <img src="static/image/flower1" alt="" />
+        <img src="static/image/flower2" alt="" />
+        <img src="static/image/flower1" alt="" />
+    </div>
+</section>
+<section class="second-part-site">
+    <div>
+        <h2>Услуги салона
+            <br>
+            <i class="text-decoration">....................................</i>
+        </h2>
+    </div>
+    <div>
+        <div class="photo-grid-columns">
+
+            <div class="photo-grid-block">
+                <img src="static/image/photo (1).jpg" alt="">
+
+                <h3 class="photo-text">Уход за ногтями</h3>
+                <p class="photo-text-bootom">от 200 рублей</p>
+            </div>
+
+            <div class="photo-grid-block">
+                <img src="static/image/photo (2).jpg" alt="">
+
+                <h3 class="photo-text">Легкий маникюр</h3>
+                <p class="photo-text-bootom">от 200 рублей</p>
+            </div>
+
+            <div class="photo-grid-block">
+                <img src="static/image/photo (3).jpg" alt="">
+
+                <h3>Педикюр</h3>
+                <p class="photo-text-bootom">от 200 рублей</p>
+            </div>
+
+            <div class="photo-grid-block">
+                <img src="static/image/photo (4).jpg" alt="">
+
+                <h3>Наращивание</h3>
+                <p class="photo-text-bootom">от 200 рублей</p>
+            </div>
         </div>
-    </section>
-    <section class="second-part-site">
-        <div>
-            <h2>Услуги салона</h2>
+
+        <div class="photo-grid-rows">
+
+            <div class="photo-grid-block">
+                <img src="static/image/photo (5).jpg" alt="">
+
+                <h3>Педикюр + лак</h3>
+                <p class="photo-text-bootom">от 200 рублей</p>
+            </div>
+
+            <div class="photo-grid-block">
+                <img src="static/image/photo (6).jpg" alt="">
+
+                <h3>Уходы</h3>
+                <p class="photo-text-bootom">от 200 рублей</p>
+            </div>
+
+            <div class="photo-grid-block">
+                <img src="static/image/photo (7).jpg" alt="">
+
+                <h3>Маникюр + гель лак</h3>
+                <p class="photo-text-bootom">от 200 рублей</p>
+            </div>
         </div>
-    </section>
-    <section class="third-part-site">
-        <div>
-            <h2>Каталог услуг</h2>
+    </div>
+
+
+</section>
+
+<section class="third-part-site" id="C1">
+    <div>
+        <h2>Каталог услуг</h2>
+    </div>
+    <br>
+    <div class="accordion">
+        <div class="contentBx">
+            <div class="labul labul-style">Уход за ногтями</div>
+            <div class="content">
+                <br>
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Классический/Европейский/Комбинированный + лак</div>
+                    <div class="accordion-content-coast">1700 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Бразильский маникюр Masura + лак</div>
+                    <div class="accordion-content-coast">2500 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Маникюр Спа Люкс + лак</div>
+                    <div class="accordion-content-coast">2500 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Бразильский маникюр Premium + лак</div>
+                    <div class="accordion-content-coast">2500 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">НЕО маникюр</div>
+                    <div class="accordion-content-coast">1500 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Вулканический маникюр с лаком</div>
+                    <div class="accordion-content-coast">1700 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Вулканический маникюр с лаком</div>
+                    <div class="accordion-content-coast">2000 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Мужской маникюр</div>
+                    <div class="accordion-content-coast">1500 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Обработка ногтей маслом</div>
+                    <div class="accordion-content-coast">1700 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Укрепление ногтей разными средствами</div>
+                    <div class="accordion-content-coast">1200 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Очистка от кутикул</div>
+                    <div class="accordion-content-coast">1500 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+            </div>
         </div>
-    </section>
-    <section class="fourth-part-site">
-        <div>
-            <h2>О салоне</h2>
+
+        <div class="contentBx">
+            <div class="labul labul-style">Легкий маникюр</div>
+            <div class="content">
+                <br>
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Классический/Европейский/Комбинированный + лак</div>
+                    <div class="accordion-content-coast">1700 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Бразильский маникюр Masura + лак</div>
+                    <div class="accordion-content-coast">2500 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Маникюр Спа Люкс + лак</div>
+                    <div class="accordion-content-coast">2500 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Бразильский маникюр Premium + лак</div>
+                    <div class="accordion-content-coast">2500 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">НЕО маникюр</div>
+                    <div class="accordion-content-coast">1500 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Вулканический маникюр с лаком</div>
+                    <div class="accordion-content-coast">1700 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Вулканический маникюр с лаком</div>
+                    <div class="accordion-content-coast">2000 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Мужской маникюр</div>
+                    <div class="accordion-content-coast">1500 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Обработка ногтей маслом</div>
+                    <div class="accordion-content-coast">1700 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Укрепление ногтей разными средствами</div>
+                    <div class="accordion-content-coast">1200 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Очистка от кутикул</div>
+                    <div class="accordion-content-coast">1500 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+            </div>
         </div>
-    </section>
-    <section class="fifth-part-site">
-        <div>
-            <h2>Почему мы?</h2>
+
+        <div class="contentBx">
+            <div class="labul labul-style">Педикюр</div>
+            <div class="content">
+                <br>
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Классический/Европейский/Комбинированный + лак</div>
+                    <div class="accordion-content-coast">1700 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Бразильский маникюр Masura + лак</div>
+                    <div class="accordion-content-coast">2500 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Маникюр Спа Люкс + лак</div>
+                    <div class="accordion-content-coast">2500 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Бразильский маникюр Premium + лак</div>
+                    <div class="accordion-content-coast">2500 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">НЕО маникюр</div>
+                    <div class="accordion-content-coast">1500 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Вулканический маникюр с лаком</div>
+                    <div class="accordion-content-coast">1700 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Вулканический маникюр с лаком</div>
+                    <div class="accordion-content-coast">2000 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Мужской маникюр</div>
+                    <div class="accordion-content-coast">1500 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Обработка ногтей маслом</div>
+                    <div class="accordion-content-coast">1700 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Укрепление ногтей разными средствами</div>
+                    <div class="accordion-content-coast">1200 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Очистка от кутикул</div>
+                    <div class="accordion-content-coast">1500 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+            </div>
         </div>
-    </section>
-    <section class="sixth-part-site">
-        <div>
-            <h2>Наши лучшие работы</h2>
+
+        <div class="contentBx">
+            <div class="labul labul-style">Наращивание</div>
+            <div class="content">
+                <br>
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Классический/Европейский/Комбинированный + лак</div>
+                    <div class="accordion-content-coast">1700 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Бразильский маникюр Masura + лак</div>
+                    <div class="accordion-content-coast">2500 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Маникюр Спа Люкс + лак</div>
+                    <div class="accordion-content-coast">2500 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Бразильский маникюр Premium + лак</div>
+                    <div class="accordion-content-coast">2500 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">НЕО маникюр</div>
+                    <div class="accordion-content-coast">1500 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Вулканический маникюр с лаком</div>
+                    <div class="accordion-content-coast">1700 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Вулканический маникюр с лаком</div>
+                    <div class="accordion-content-coast">2000 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Мужской маникюр</div>
+                    <div class="accordion-content-coast">1500 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Обработка ногтей маслом</div>
+                    <div class="accordion-content-coast">1700 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Укрепление ногтей разными средствами</div>
+                    <div class="accordion-content-coast">1200 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Очистка от кутикул</div>
+                    <div class="accordion-content-coast">1500 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+            </div>
         </div>
-    </section>
-    <section class="seventh-part-site">
-        <div>
-            <h2>Наши специалисты</h2>
+
+        <div class="contentBx">
+            <div class="labul labul-style">Уходы</div>
+            <div class="content">
+                <br>
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Классический/Европейский/Комбинированный + лак</div>
+                    <div class="accordion-content-coast">1700 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Бразильский маникюр Masura + лак</div>
+                    <div class="accordion-content-coast">2500 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Маникюр Спа Люкс + лак</div>
+                    <div class="accordion-content-coast">2500 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Бразильский маникюр Premium + лак</div>
+                    <div class="accordion-content-coast">2500 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">НЕО маникюр</div>
+                    <div class="accordion-content-coast">1500 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Вулканический маникюр с лаком</div>
+                    <div class="accordion-content-coast">1700 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Вулканический маникюр с лаком</div>
+                    <div class="accordion-content-coast">2000 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Мужской маникюр</div>
+                    <div class="accordion-content-coast">1500 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Обработка ногтей маслом</div>
+                    <div class="accordion-content-coast">1700 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Укрепление ногтей разными средствами</div>
+                    <div class="accordion-content-coast">1200 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Очистка от кутикул</div>
+                    <div class="accordion-content-coast">1500 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+            </div>
         </div>
-    </section>
+
+        <div class="contentBx">
+            <div class="labul labul-style">Педикюр + </div>
+            <div class="content">
+                <br>
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Классический/Европейский/Комбинированный + лак</div>
+                    <div class="accordion-content-coast">1700 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Бразильский маникюр Masura + лак</div>
+                    <div class="accordion-content-coast">2500 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Маникюр Спа Люкс + лак</div>
+                    <div class="accordion-content-coast">2500 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Бразильский маникюр Premium + лак</div>
+                    <div class="accordion-content-coast">2500 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">НЕО маникюр</div>
+                    <div class="accordion-content-coast">1500 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Вулканический маникюр с лаком</div>
+                    <div class="accordion-content-coast">1700 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Вулканический маникюр с лаком</div>
+                    <div class="accordion-content-coast">2000 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Мужской маникюр</div>
+                    <div class="accordion-content-coast">1500 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Обработка ногтей маслом</div>
+                    <div class="accordion-content-coast">1700 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Укрепление ногтей разными средствами</div>
+                    <div class="accordion-content-coast">1200 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Очистка от кутикул</div>
+                    <div class="accordion-content-coast">1500 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+            </div>
+        </div>
+
+        <div class="contentBx">
+            <div class="labul labul-style">Маникюр + гель лак</div>
+            <div class="content">
+                <br>
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Классический/Европейский/Комбинированный + лак</div>
+                    <div class="accordion-content-coast">1700 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Бразильский маникюр Masura + лак</div>
+                    <div class="accordion-content-coast">2500 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Маникюр Спа Люкс + лак</div>
+                    <div class="accordion-content-coast">2500 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Бразильский маникюр Premium + лак</div>
+                    <div class="accordion-content-coast">2500 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">НЕО маникюр</div>
+                    <div class="accordion-content-coast">1500 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Вулканический маникюр с лаком</div>
+                    <div class="accordion-content-coast">1700 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Вулканический маникюр с лаком</div>
+                    <div class="accordion-content-coast">2000 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Мужской маникюр</div>
+                    <div class="accordion-content-coast">1500 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Обработка ногтей маслом</div>
+                    <div class="accordion-content-coast">1700 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Укрепление ногтей разными средствами</div>
+                    <div class="accordion-content-coast">1200 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+
+                <div class="accordion-content-catalog">
+
+                    <div class="accordion-content-title">Очистка от кутикул</div>
+                    <div class="accordion-content-coast">1500 руб</div>
+                    <div class="accordion-content-time">1ч. 15 мин.</div>
+
+                </div>
+                <hr><br>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="fourth-part-site" id="C3">
+    <div>
+        <h2>О салоне</h2>
+    </div>
+    <div class="section-aboutus">Мы предлагаем нашим клиентам новый подход – широкий перечень услуг маникюра и
+        педикюра с выездом на дом в Казани. Теперь не нужно ехать в салон красоты.
+        Наши квалифицированные мастера сами приедут в назначенное вами место,
+        в каком бы районе столицы вы не находились. Это позволяет экономить ваше время,
+        при этом получать такое же качественное обслуживание на дому, как и в студии маникюра.
+        К тому же, такой способ не предусматривает лишних затрат. Стоимость заказа начинается от 399 рублей!
+    </div>
+</section>
+
+<section class="fifth-part-site" style="min-height: auto;">
+    <div>
+        <h2>Почему мы ?</h2>
+    </div>
+    <div class="section-whywe">
+
+        <div class="section-whywe-picture">
+
+            <img src="static/image/whywe (1).jpg" alt="">
+            <h6>Современное оборудование</h6>
+
+        </div>
+
+        <div class="section-whywe-picture">
+
+            <img src="static/image/whywe (2).jpg" alt="">
+            <h6>Натуральная продукция</h6>
+
+        </div>
+
+        <div class="section-whywe-picture">
+
+            <img src="static/image/whywe (3).jpg" alt="">
+            <h6>Полный спектр услуг</h6>
+
+        </div>
+
+        <div class="section-whywe-picture">
+
+            <img src="static/image/whywe (4).jpg" alt="">
+            <h6>Опытные специалисты</h6>
+
+        </div>
+
+    </div>
+</section>
+<section class="sixth-part-site" style="padding-top: 150px;">
+    <div>
+        <h2>Наши лучшие работы</h2>
+    </div>
+    <div class="section-bestwork-conteiner">
+
+        <div class="section-bestwork-conteiner-text">
+            Мы делимся с Вами тем, чем гордимся! Наши стилисты красоты
+            отслеживают самые актуальные подиумные тренды и новинки street-fashion.
+            Дизайнеры создают уникальные образцы nail-art. А мастера каждый день делают
+            их частью Вашего образа!
+        </div>
+
+        <div class="section-bestwork-conteiner-picture">
+
+            <div class="conteiner-picture">
+
+                <img src="static/image/bestwork (1).jpg" alt="">
+                <h6>Алмазные копи</h6>
+                <h7>900 руб</h7>
+
+            </div>
+
+            <div class="conteiner-picture">
+
+                <img src="static/image/bestwork (2).jpg" alt="">
+                <h6>Бирюзовые искры</h6>
+                <h7>1 600 руб</h7>
+
+            </div>
+
+            <div class="conteiner-picture">
+
+                <img src="static/image/bestwork (3).jpg" alt="">
+                <h6>Белая безмятежность</h6>
+                <h7>1000 руб</h7>
+
+            </div>
+
+            <div class="conteiner-picture">
+
+                <img src="static/image/bestwork (4).jpg" alt="">
+                <h6>Сапфировый расвет</h6>
+                <h7>800 руб</h7>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<section class="seventh-part-site" id="C2">
+    <div>
+        <h2>Наши специалисты</h2>
+    </div>
+
+    <div class="section-our-worker">
+
+        <div class="our-worker--container">
+
+            <div class="our-worker--container-picture">
+
+                <img src="static/image/our-worker (1).jpg" alt="">
+                <h6>Алина Биккинина</h6>
+                <h7>Основатель</h7>
+
+            </div>
+
+            <div class="our-worker--container-picture">
+
+                <img src="static/image/our-worker (2).jpg" alt="">
+                <h6>Марина Касаткина</h6>
+                <h7>Маникюрист</h7>
+
+            </div>
+
+            <div class="our-worker--container-picture">
+
+                <img src="static/image/our-worker (3).jpg" alt="">
+                <h6>Екатерина Колесникова</h6>
+                <h7>Мастер маникюра\педикюра</h7>
+
+            </div>
+
+            <div class="our-worker--container-picture">
+
+                <img src="static/image/our-worker (4).jpg" alt="">
+                <h6>Альфина Юнусова</h6>
+                <h7>Мастер маникюра\педикюра</h7>
+
+            </div>
+
+            <div class="our-worker--container-picture">
+
+                <img src="static/image/our-worker (5).jpg" alt="">
+                <h6>Аделина Илькаева</h6>
+                <h7>Топ мастер маникюра\педикюра</h7>
+
+            </div>
+
+            <div class="our-worker--container-picture">
+
+                <img src="static/image/our-worker (6).jpg" alt="">
+                <h6>Ильвира Зорина</h6>
+                <h7>Мастер маникюра\педикюра</h7>
+
+            </div>
+
+            <div class="our-worker--container-picture">
+
+                <img src="static/image/our-worker (7).jpg" alt="">
+                <h6>Анна Баникова</h6>
+                <h7>Топ мастер маникюра\педикюра</h7>
+
+            </div>
+
+            <div class="our-worker--container-picture">
+
+                <img src="static/image/our-worker (8).jpg" alt="">
+                <h6>Валерия Хайруллина</h6>
+                <h7>Маникюрист</h7>
+
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="eight-part-site" id="C4">
+
+    <div class="section-form">
+
+        <div class="form-container">
+
+            <section class="form-container-section">
+
+                <form class="">
+                    <input type="hidden" name="csrfmiddlewaretoken"
+                        value="ZVsSMroFmq2xRGt5eZZ9VW7Pf0YcXeARCe6w8gjJoc2MsatLWpYZCSpI6tES5QTy">
+                        
+                    <div class="columns">
+                        <div class="column">
+                            <div class="field">
+                                <div class="control">
+                                    <input type="text" name="name" maxlength="100" placeholder="Полное имя"
+                                        class="input" required="" id="id_name">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="control">
+                                    <input type="email" name="email" maxlength="100" placeholder="Ваша почта@gmail.com"
+                                        class="input" required="" id="id_email">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="control">
+                                    <input type="text" name="phone" maxlength="20" placeholder="+7 (777) 777 77 77"
+                                        class="input" required="" id="id_phone">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="control">
+                                    <div class="select">
+                                        <select name="good" placeholder="Выберите услугу" class="input" required=""
+                                            id="id_good">
+                                            <option value="" selected="">Выберите услугу</option>
+
+                                            <option value="A1">Уход за ногтями</option>
+
+                                            <option value="A2">Легкий маникюр</option>
+
+                                            <option value="A3">Педикюр</option>
+
+                                            <option value="A4">Наращивание</option>
+
+                                            <option value="A5">Уходы</option>
+
+                                            <option value="A6">Педикюр + </option>
+
+                                            <option value="A7">Маникюр + гель лак</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="control">
+                                    <div class="select">
+                                        <input type="datetime-local" name="geeks_field" placeholder="Назначьте время"
+                                            class="input" required="" id="id_geeks_field">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <div class="control">
+                                    <div class="select">
+                                        <select name="master" placeholder="Выберите мастера" class="input" required=""
+                                            id="id_master">
+                                            <option value="" selected="">Выберите мастера</option>
+
+                                            <option value="B1">Алина Биккинина</option>
+
+                                            <option value="B2">Марина Касаткина</option>
+
+                                            <option value="B3">Екатерина Колесникова</option>
+
+                                            <option value="B4">Альфина Юнусова</option>
+
+                                            <option value="B5">Аделина Илькаева</option>
+
+                                            <option value="B6">Ильвира Зорина</option>
+
+                                            <option value="B7">Анна Баникова</option>
+
+                                            <option value="B8">Валерия Хайруллина</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="control">
+                                    <textarea name="message" cols="40" rows="10" class="textarea"
+                                        placeholder="Сообщение для мастера" required="" id="id_message"></textarea>
+                                </div>
+                            </div>
+                            <div class="field is-grouped button-bottom">
+                                <div class="control">
+                                    <button class="button" style="vertical-align:middle">Отправить заявку</button>
+                                </div>
+                                <div class="control">
+                                    <button class="button" style="display: none;">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </section>
+
+        </div>
+
+
+        <div class="form-picture" style="width:729px; height: 550px;">
+
+            <a> <img src="static/image/mail.jpg" alt="" class="mail"></a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script src="{% static 'js/accordion.js' %}">
+    const accordion = document.getElementsByClassName('contentBx');
+
+        for ( i=0; i<accordion.length; i++ ){
+        
+            accordion[i].addEventListener('click', function(){
+                this.classList.toggle('active')
+            })
+        }
+</script>
+
 {% endblock %}

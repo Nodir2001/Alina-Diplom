@@ -16,3 +16,32 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class Order(models.Model):
+    ORDER_CHOICES = [
+        ('A1', 'Уход за ногтями'),
+        ('A2', 'Легкий маникюр'),
+        ('A3', 'Педикюр'),
+        ('A4', 'Наращивание'),
+        ('A5', 'Уходы'),
+        ('A6', 'Педикюр + '),
+        ('A7', 'Маникюр + гель лак'),
+    ]
+    MASTER_CHOICES = [
+        ('B1', 'Алина Биккинина'),
+        ('B2', 'Марина Касаткина'),
+        ('B3', 'Екатерина Колесникова'),
+        ('B4', 'Альфина Юнусова'),
+        ('B5', 'Аделина Илькаева'),
+        ('B6', 'Ильвира Зорина'),
+        ('B7', 'Анна Баникова'),
+        ('B8', 'Валерия Хайруллина'),
+    ]
+    name = models.CharField(max_length=100)
+    email = models.EmailField(max_length=100)
+    phone = models.CharField(max_length=20)
+    master  = models.CharField(max_length=2, choices=MASTER_CHOICES)
+    good = models.CharField(max_length=2, choices=ORDER_CHOICES)
+    geeks_field = models.DateTimeField()
+    message = models.TextField()
