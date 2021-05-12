@@ -1,0 +1,61 @@
+.hand {
+    position: absolute;width: 300px;
+    height: 300px;
+    margin-left: 900px;
+    margin-top: 50px;
+}
+.welcome {
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    margin-left: 10%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+}
+
+.second-part-site {
+    margin-top: 261px;
+}
+
+.fourth-part-site {
+
+    margin-top: 60px; 
+    min-height: 60%;
+}
+
+.eight-part-site {
+
+    background: #FDF6E6;
+    margin: 150px 0;
+}
+
+.form-container {
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: auto;                                       
+}
+
+.form-container-section {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.input {
+    border: 1px solid #ccc!important;
+    padding: 8px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+}
+
+.mail {
+    width: 700px;
+    height: 550px;
+}

@@ -3,8 +3,69 @@
 {% block content %}
 
 {% load static %}
+{% load widget_tweaks %}
+
+<section class="section">
+  
+    <form class="container">
+        {% csrf_token %}
+      <div class="columns">
+        <div class="column">
+          <div class="field">
+            <div class="control">
+              {% render_field form.name class="input" placeholder="Полное имя" %}
+            </div>
+          </div>
+          <div class="field">
+            <div class="control">
+              {% render_field form.email class="input" placeholder="Ваша почта@gmail.com" %}
+            </div>
+          </div>
+          <div class="field">
+            <div class="control">
+              {% render_field form.phone class="input" placeholder="+7 (777) 777 77 77" %}
+            </div>
+          </div>
+          <div class="field">
+            <div class="control">
+              <div class="select">
+                {% render_field form.good class="input" placeholder="Выберите услугу" %}
+              </div>
+            </div>
+          </div>
+          <div class="field">
+            <div class="control">
+              <div class="select">
+                {% render_field form.geeks_field class="input" placeholder="Выберите услугу" %}
+              </div>
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="control">
+              <div class="select">
+                {% render_field form.master class="input" placeholder="Выберите мастера" %}
+              </div>
+            </div>
+          </div>
+          <div class="field">
+            <div class="control">
+              {% render_field form.message rows="10" placeholder="Сообщение для мастера" class+="textarea" %}
+            </div>
+          </div>
+          <div class="field is-grouped">
+            <div class="control">
+              <button class="button">Submit</button>
+            </div>
+            <div class="control">
+              <button class="button">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </section>
+ 
 
 
-
-
-{% endblock %}
+{% endblock %}  -->
