@@ -59,3 +59,8 @@
     width: 700px;
     height: 550px;
 }
+
+
+.map {
+    background-image: url(../image/map.jpg); ;
+}
