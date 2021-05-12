@@ -128,9 +128,9 @@ section  p {
 .hand-pictare {
     position: absolute;
     width: 300px;
-      height: 300px;
-     margin-left: 900px;
-       margin-top: 50px;
+    height: 300px;
+    margin-left: 900px;
+    margin-top: 50px;
 }
 .circle {
     position: absolute;
@@ -146,11 +146,27 @@ section  p {
 /* FOOTER  */ 
 
 footer {
-    margin-top: 145px;
-    background-image: url(../../blog/static/image/footer.png); 
+    background-image: url(../../static/image/footer.png);
+    display: grid; 
+    justify-content: center;
+    max-width: 1451px;
+    height: 276px;
+    margin: auto;
 }
 
+.footerCol {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 250px;
+}
 
+.footerCol-two {
+    margin-right: 50px; 
+    display: grid; 
+    justify-content: center; 
+    grid-template-columns: auto auto; 
+    grid-gap: 50px;
+}
 
 
 /* Section  */
@@ -164,6 +180,10 @@ footer {
     text-align: center;
     letter-spacing: 0.03em;
     color: #000000;
+}
+.photo-text-bootom{
+    justify-content: center;
+    height: 50px;
 }
 
 .photo-grid-columns {
@@ -187,8 +207,8 @@ footer {
 }
 .photo-grid-block{
   background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
+ /* border: 1px solid rgba(0, 0, 0, 0.8); */
+  padding: 10px;
   font-size: 30px;
   text-align: center;
 }
@@ -207,6 +227,7 @@ div > h2 {
     font-weight: 600;
     font-size: 36px;
     line-height: 50px;
+    margin: 50px 0;
 }
 
 
@@ -279,7 +300,7 @@ div > h2 {
 }
 
 .accordion  .contentBx.active .content {
-    background: rgb(231, 229, 228);
+    background: rgb(248 248 248);
     height: 1300px;
     padding: 10px;
 }
@@ -500,3 +521,60 @@ div > h2 {
     float: left;
     background-image: url(../image/mail.jpg); 
 }
+
+.section-form {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+}
+
+.column {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 15px;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  .button-bottom {
+    
+    margin-top: auto;
+  }
