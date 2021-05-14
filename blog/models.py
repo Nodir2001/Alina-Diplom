@@ -1,14 +1,16 @@
 from django.conf import settings
 from django.db import models
 from django.utils import timezone
+from datetime import datetime, date
 
-
+'''
 class Post(models.Model):
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
     text = models.TextField()
     created_date = models.DateTimeField(default=timezone.now)
-    published_date = models.DateTimeField(blank=True, null=True)
+    published_date = models.DateTimeField(blank=True, null=True) 
+   
 
     def publish(self):
         self.published_date = timezone.now()
@@ -16,8 +18,7 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
-
-
+'''
 class Order(models.Model):
     ORDER_CHOICES = [
         ('A1', 'Уход за ногтями'),
@@ -38,10 +39,14 @@ class Order(models.Model):
         ('B7', 'Анна Баникова'),
         ('B8', 'Валерия Хайруллина'),
     ]
-    name = models.CharField(max_length=100)
-    email = models.EmailField(max_length=100)
+    name = models.CharField("Имя",max_length=100)
+    email = models.EmailField("почта", max_length=100)
     phone = models.CharField(max_length=20)
     master  = models.CharField(max_length=2, choices=MASTER_CHOICES)
     good = models.CharField(max_length=2, choices=ORDER_CHOICES)
-    geeks_field = models.DateTimeField()
+    purchase_date = models.DateField("Дата Date(mm/dd/2021)", auto_now_add=False, auto_now=False, blank=True, null=True)
+
     message = models.TextField()
+
+    def __str__(self):
+        return self.title

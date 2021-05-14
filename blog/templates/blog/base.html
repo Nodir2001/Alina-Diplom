@@ -44,18 +44,18 @@
                 </li>
 
                 <li>
-                    <a  onclick="location.href='{% url 'order' %}'"> Записаться на прием </a>
+                    <a  onclick="location.href='{% url  'order'  %}'"> Записаться на прием </a>
                 </li>   
             </ul>
         </header>
 
         <a> <img src="static/image/hand.png" alt="" class="hand-pictare"></a>
 
-          <!--button onclick="togglePopup()">Show Popup</button-->
+
         
         {% block content %}
         
-        <!-- Try to delete invisible column-->
+
 
         {% endblock %}
 
