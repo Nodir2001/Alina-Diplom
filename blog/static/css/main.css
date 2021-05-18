@@ -579,3 +579,24 @@ div > h2 {
     
     margin-top: auto;
   }
+
+
+.column-gap400 {
+    column-gap: 400px;
+  }
+
+.column-gap480 {
+    column-gap: 480px;
+}  
+
+.column-gap550 {
+    column-gap: 550px;
+}
+
+.column-gap500 {
+    column-gap: 500px;
+}
+
+.column-gap450 {
+    column-gap: 450px;
+}  

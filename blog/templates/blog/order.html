@@ -1,75 +1,21 @@
-{% extends 'blog/base.html' %}
+{% extends 'blog/landing.html' %}
 
-{% block content %}
+{% block fix %}
 
 {% load static %}
 
+<form action="" method="POST" id="OrderForm">
 
-{{ form}}
-<!--
-<section class="section">
+  {% csrf_token %}
   
-    <form class="container">
-        {% csrf_token %}
-      <div class="columns">
-        <div class="column">
-          <div class="field">
-            <div class="control">
-              {% render_field form.name class="input" placeholder="Полное имя" %}
-            </div>
-          </div>
-          <div class="field">
-            <div class="control">
-              {% render_field form.email class="input" placeholder="Ваша почта@gmail.com" %}
-            </div>
-          </div>
-          <div class="field">
-            <div class="control">
-              {% render_field form.phone class="input" placeholder="+7 (777) 777 77 77" %}
-            </div>
-          </div>
-          <div class="field">
-            <div class="control">
-              <div class="select">
-                {% render_field form.good class="input" placeholder="Выберите услугу" %}
-              </div>
-            </div>
-          </div>
-          <div class="field">
-            <div class="control">
-              <div class="select">
-                {% render_field form.geeks_field class="input" placeholder="Выберите услугу" %}
-              </div>
-            </div>
-          </div>
+ {{ form }}
+  
+  <input type="submit" value="Сохранить" class="default" name="_save">
+  
+  
+  
+  </form>
+  
 
-          <div class="field">
-            <div class="control">
-              <div class="select">
-                {% render_field form.master class="input" placeholder="Выберите мастера" %}
-              </div>
-            </div>
-          </div>
-          <div class="field">
-            <div class="control">
-              {% render_field form.message rows="10" placeholder="Сообщение для мастера" class+="textarea" %}
-            </div>
-          </div>
-          <div class="field is-grouped">
-            <div class="control">
-              <button class="button" style="vertical-align:middle">Отправить заявку</button>
-            </div>
-            <div class="control">
-              <button class="button" style="display: none;">Cancel</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </form>
-  </section>
- 
--->
-
-
-{% endblock %}  
+{% endblock fix %}  
 

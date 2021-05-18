@@ -41,12 +41,12 @@ class Order(models.Model):
     ]
     name = models.CharField("Имя",max_length=100)
     email = models.EmailField("почта", max_length=100)
-    phone = models.CharField(max_length=20)
-    master  = models.CharField(max_length=2, choices=MASTER_CHOICES)
-    good = models.CharField(max_length=2, choices=ORDER_CHOICES)
-    purchase_date = models.DateField("Дата Date(mm/dd/2021)", auto_now_add=False, auto_now=False, blank=True, null=True)
-
+    phone = models.CharField("Номер телефона", max_length=20)
+    master  = models.CharField("Мастер", max_length=2, choices=MASTER_CHOICES)
+    good = models.CharField("Услуга", max_length=2, choices=ORDER_CHOICES)
+    purchase_date = models.DateField("(дата/месяй/год)", auto_now_add=False, auto_now=False, blank=True)
+    purchase_time = models.TimeField("Время ", auto_now_add=False, auto_now=False, blank=True)
     message = models.TextField()
 
     def __str__(self):
-        return self.title
+         return self.phone + '  ' + self.name
