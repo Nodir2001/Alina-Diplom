@@ -1,3 +1,4 @@
+
 {% extends 'blog/base.html' %}
 
 {% block content %}
@@ -13,7 +14,7 @@
             перфекционистов, а влагостойкость лака является одним из лучших на рынке</p>
     </h2>
 
-    <a href="#C4" id="btn">ЗАКАЗАТЬ СЕЙЧАС </a>
+    <a href="#order" id="btn">ЗАКАЗАТЬ СЕЙЧАС </a>
     <div class="flowers">
         <img src="static/image/flower1" alt="" />
         <img src="static/image/flower2" alt="" />
@@ -87,7 +88,7 @@
 
 </section>
 
-<section class="third-part-site" id="C1">
+<section class="third-part-site" id="catalog">
     <div>
         <h2>Каталог услуг</h2>
     </div>
@@ -106,7 +107,7 @@
                 </div>
                 <hr><br>
 
-                <div class="accordion-content-catalog">
+                <div class="accordion-content-catalog   column-gap400">
 
                     <div class="accordion-content-title">Бразильский маникюр Masura + лак</div>
                     <div class="accordion-content-coast">2500 руб</div>
@@ -114,7 +115,7 @@
 
                 </div>
                 <hr><br>
-                <div class="accordion-content-catalog">
+                <div class="accordion-content-catalog   column-gap480">
 
                     <div class="accordion-content-title">Маникюр Спа Люкс + лак</div>
                     <div class="accordion-content-coast">2500 руб</div>
@@ -122,7 +123,7 @@
 
                 </div>
                 <hr><br>
-                <div class="accordion-content-catalog">
+                <div class="accordion-content-catalog column-gap480">
 
                     <div class="accordion-content-title">Бразильский маникюр Premium + лак</div>
                     <div class="accordion-content-coast">2500 руб</div>
@@ -131,7 +132,7 @@
                 </div>
                 <hr><br>
 
-                <div class="accordion-content-catalog">
+                <div class="accordion-content-catalog column-gap550">
 
                     <div class="accordion-content-title">НЕО маникюр</div>
                     <div class="accordion-content-coast">1500 руб</div>
@@ -149,7 +150,7 @@
                 </div>
                 <hr><br>
 
-                <div class="accordion-content-catalog">
+                <div class="accordion-content-catalog column-gap400">
 
                     <div class="accordion-content-title">Вулканический маникюр с лаком</div>
                     <div class="accordion-content-coast">2000 руб</div>
@@ -158,16 +159,16 @@
                 </div>
                 <hr><br>
 
-                <div class="accordion-content-catalog">
+                <div class="accordion-content-catalog column-gap500">
 
-                    <div class="accordion-content-title">Мужской маникюр</div>
+                    <div class="accordion-content-title column-gap400">Мужской маникюр</div>
                     <div class="accordion-content-coast">1500 руб</div>
                     <div class="accordion-content-time">1ч. 15 мин.</div>
 
                 </div>
                 <hr><br>
 
-                <div class="accordion-content-catalog">
+                <div class="accordion-content-catalog column-gap450">
 
                     <div class="accordion-content-title">Обработка ногтей маслом</div>
                     <div class="accordion-content-coast">1700 руб</div>
@@ -185,7 +186,7 @@
                 </div>
                 <hr><br>
 
-                <div class="accordion-content-catalog">
+                <div class="accordion-content-catalog column-gap500">
 
                     <div class="accordion-content-title">Очистка от кутикул</div>
                     <div class="accordion-content-coast">1500 руб</div>
@@ -818,7 +819,7 @@
 
 </section>
 
-<section class="fourth-part-site" id="C3">
+<section class="fourth-part-site" id="aboutUs">
     <div>
         <h2>О салоне</h2>
     </div>
@@ -918,7 +919,7 @@
 
     </div>
 </section>
-<section class="seventh-part-site" id="C2">
+<section class="seventh-part-site" id="specialists">
     <div>
         <h2>Наши специалисты</h2>
     </div>
@@ -996,17 +997,32 @@
 
 </section>
 
-<section class="eight-part-site" id="C4">
+<section class="eight-part-site" id="order">
 
     <div class="section-form">
 
         <div class="form-container">
+            <h2 style="font-family: Inter;
+            font-style: normal;
+            font-weight: bold;
+            line-height: 32px;
+            letter-spacing: 0.1px;
+            color: #252B42;
+            margin: 0;
+            text-align: left;"> Хотите классный маникюр? </h2>
+            <p style="font-family: Inter;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.2px;
+            color: #737373;
+            justify-content: center;
+            text-align: left;"> Пройдите прямо сейчас маникюрное обследование и получите скидку на маникюрные услуги </p>
+            <section style="min-height:0; margin: 50px 0;" class="form-container-section">
 
-            <section class="form-container-section">
-
-                <form class="">
-                    <input type="hidden" name="csrfmiddlewaretoken"
-                        value="ZVsSMroFmq2xRGt5eZZ9VW7Pf0YcXeARCe6w8gjJoc2MsatLWpYZCSpI6tES5QTy">
+                <form action="" method="POST" id="OrderForm">
+                    {% csrf_token %}
                         
                     <div class="columns">
                         <div class="column">
@@ -1056,8 +1072,16 @@
                             <div class="field">
                                 <div class="control">
                                     <div class="select">
-                                        <input type="datetime-local" name="geeks_field" placeholder="Назначьте время"
-                                            class="input" required="" id="id_geeks_field">
+                                        <input type="date" name="purchase_date" placeholder="Назначьте дату"
+                                            class="input" required="" id="id_date_field">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="control">
+                                    <div class="select">
+                                        <input type="time" name="purchase_time" placeholder="Назначьте время"
+                                            class="input" required="" id="id_time_field">
                                     </div>
                                 </div>
                             </div>
@@ -1097,7 +1121,7 @@
                             </div>
                             <div class="field is-grouped button-bottom">
                                 <div class="control">
-                                    <button class="button" style="vertical-align:middle">Отправить заявку</button>
+                                    <button type="submit" class="button" style="vertical-align:middle">Отправить заявку</button>
                                 </div>
                                 <div class="control">
                                     <button class="button" style="display: none;">Cancel</button>
@@ -1106,6 +1130,7 @@
                         </div>
                     </div>
                 </form>
+
             </section>
 
         </div>
@@ -1125,7 +1150,7 @@
         <h2>Наши контакты</h2>
     </div>
     <div class="map">
-
+        <a>  <img style="margin: 20px 0;" src="static/image/map.jpg" alt="">        </a>
     </div>
 </section>
 <script src="{% static 'js/accordion.js' %}">
@@ -1138,7 +1163,6 @@
             })
         }
 </script>
-
 
 {% endblock %}
 
